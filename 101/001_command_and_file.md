@@ -15,7 +15,7 @@
 | HOME | ユーザのホームディレクトリ |
 | PS1 | プロンプトを定義 |
 | PS2 | 2次プロンプトを定義 |
-| HITFILE | commandを格納するファイルを定義 |
+| HITFILE | コマンドを格納するファイルを定義 |
 | LANG | 言語ファイル |
 
 #### シェル変数のコマンド
@@ -47,3 +47,17 @@ $ export TEST="SE"
 $ env | grep TEST
 TEST=SE
 ```
+
+## 作業ディレクトリの表示
+pwd コマンドは現在の作業用ディレクトリを表示する。  
+また、 PWD 変数には現在の作業ディレクトリの絶対パスが格納されている。  
+
+```Shell
+$ pwd
+/home/hoge
+$ $PWD
+/home/hoge
+$ ${PWD}
+/home/hoge
+```
+
